@@ -8,7 +8,7 @@ router.get('/about', about)
 router.get('/deadlock', deadlock)
 router.get('/leaderboards', leader)
 router.get('/leaderboards/:name', leader1)
-router.post('/add/:insta', add)
+router.get('/add/:insta', add)
 
 module.exports=router
 

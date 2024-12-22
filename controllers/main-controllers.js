@@ -33,7 +33,7 @@ const add = async(req,res)=>{
     try{
         const bro22 =await newCreate1(blah)
         if(bro22){
-            res.status(201).send(bro22);
+            res.status(201).json(bro22);
         }else{
             throw new Error("Even I don't know the issue")
         }

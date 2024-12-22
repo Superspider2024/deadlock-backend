@@ -5,6 +5,7 @@ const image= require('./routers/image-router.js')
 const {connect, users}= require('./db/db.js')
 const {User, newCreate, double}= require('./db/create.js')
 require("dotenv").config()
+const cors = require('cors');
 const PORT= process.env.PORT;
 
 
@@ -12,7 +13,7 @@ connect()
 
 
 
-
+app.use(cors())
 app.use(express.json())
 app.use('/app', main)
 app.use('/api', image)

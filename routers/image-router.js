@@ -5,7 +5,7 @@ const router= express.Router()
 //image
 
 router.get('/images/:id', image)
-router.post('/vote1/:id', vote1)
-router.post('/vote0/:id', vote0)
+router.get('/vote1/:id', vote1)
+router.get('/vote0/:id', vote0)
 module.exports=router
 
