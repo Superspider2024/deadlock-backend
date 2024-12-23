@@ -5,17 +5,17 @@ const {addVote, minusVote}= require('../db/votes.js')
 
 const image =async(req,res)=>{
     try{
+    const lol121='';
     const num = req.params.id
     const bruv = await users()
     const bro = bruv.find(n => n.id==num)
 
-    const man= generateImageUrl(bro.insta)
-
-    res.status(200).send(man)
+    const man= await generateImageUrl(bro.insta)
+    res.status(200).json(man)
 
 
     }catch(e){
-        res.status(500).send(e)
+        res.status(500).send(e.message)
     }
 
 }

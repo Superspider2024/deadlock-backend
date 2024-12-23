@@ -9,14 +9,16 @@ cloudinary.config({
 })
 
 
-const generateImageUrl = (publicId) => {
-    const imageUrl = cloudinary.url(publicId, {
+const generateImageUrl = async(publicId) => {
+  try{
+    const imageUrl = await cloudinary.url(publicId, {
       width: 320,
       height: 320,
     });
-    console.log('Generated URL:', imageUrl);
-    return imageUrl;
-  };
+    return imageUrl
+}catch(e){
+  throw new Error("Issue getting image from the database")
+}};
 
 
 

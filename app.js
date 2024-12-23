@@ -19,16 +19,16 @@ app.use('/app', main)
 app.use('/api', image)
 
 
-//main page-'/'DONE TESTED
-//about-'/app/about' DONE TESTED
+//main page-'/'DONE TESTED MADE
+//about-'/app/about' DONE TESTED MADE
 //leaderboards-'/app/leaderboards' DONE TESTED
 //leaderboards-'/app/leaderboards/:name' DONE TESTED
 //deadlock-'/app/deadlock' DONE TESTED
 //images-'/api/images' DONE TESTED
-//add-'/app/add/:insta DONE TESTED
-//connect an move everything to mongoDB DONE TESTED
-//adding a vote '/api/vote1/:id'
-//adding a vote '/api/vote0/:id'
+//add-'/app/add/:insta DONE TESTED MADE
+//connect an move everything to mongoDB DONE TESTED MADE
+//adding a vote '/api/vote1/:id' DONE TESTED
+//adding a vote '/api/vote0/:id' DONE TESTED
 
 app.get('/', (req,res)=>{
     res.send('hi!')
