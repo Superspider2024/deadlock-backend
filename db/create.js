@@ -1,5 +1,5 @@
 const mon= require('mongoose')
-const {users}= require('./db.js')
+
 
 const userSchema= mon.Schema({
     insta:String,
