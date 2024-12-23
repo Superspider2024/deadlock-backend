@@ -18,7 +18,7 @@
 
 - I was able to improve error handling on all controllers and asynchronous functions due to the severe bug-"Lauren".
 
-  ## version 0.0.4
+## version 0.0.4
 
-  - Implemneted the ELO algorithmn from chess.com to make the points much fairer. This allows those with low points to catch up and those with high not to dominate constantly. This also changed the whole votes router and controller.
+- Implemneted the ELO algorithmn from chess.com to make the points much fairer. This allows those with low points to catch up and those with high not to dominate constantly. This also changed the whole votes router and controller.
 
