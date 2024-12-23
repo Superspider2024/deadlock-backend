@@ -36,5 +36,3 @@ app.get('/', async(req,res)=>{
 app.listen(PORT,()=>{
     console.log("listening...")
 })
-
-module.exports=app;
