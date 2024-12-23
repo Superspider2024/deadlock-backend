@@ -6,6 +6,7 @@ const {connect, users}= require('./db/db.js')
 const {User, newCreate, double}= require('./db/create.js')
 require("dotenv").config()
 const cors = require('cors');
+const PORT= process.env.PORT;
 
 
 
@@ -32,4 +33,6 @@ app.get('/', async(req,res)=>{
 })
 
 
-module.exports=app;
+app.listen(PORT,()=>{
+    console.log("listening...")
+})
