@@ -6,7 +6,7 @@ const {connect, users}= require('./db/db.js')
 const {User, newCreate, double}= require('./db/create.js')
 require("dotenv").config()
 const cors = require('cors');
-const PORT= process.env.PORT;
+
 
 
 connect()
