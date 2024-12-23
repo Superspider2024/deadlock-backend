@@ -1,26 +1,35 @@
-const mon= require('mongoose')
-require("dotenv").config()
-const {User} = require('./create.js')
-
-const connect=()=>{
-    mon.connect(process.env.db).then(()=>{
-        console.log("Connected")
-    }).catch((e)=>{
-        console.log("Not connected,", e)
-    })
-}
-
-const users = async ()=>{
-    try{
-    const all1 = await User.find();
-    return all1
-}catch(e){
-    console.log(e)
-}}
+const mongoose = require('mongoose');
+require('dotenv').config();
+const { User } = require('./create.js');
 
 
+let isConnected = false;
 
+const connect = async () => {
+  if (isConnected) {
+    console.log("Using existing MongoDB connection");
+    return;
+  }
 
+  try {
+    await mongoose.connect(process.env.db, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    isConnected = true;
+    console.log("MongoDB connected successfully");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+};
 
-module.exports={users,connect}
+const users = async () => {
+  try {
+    const allUsers = await User.find();
+    return allUsers;
+  } catch (error) {
+    console.error("Error fetching users:", error);
+  }
+};
 
+module.exports = { users, connect };

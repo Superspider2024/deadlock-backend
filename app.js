@@ -32,7 +32,4 @@ app.get('/', async(req,res)=>{
 })
 
 
-app.listen(PORT,()=>{
-    console.log('Listening lol!')
-})
-//http://localhost:3000
+module.exports=app;
