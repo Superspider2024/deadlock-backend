@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "spp.js", 
+        "src": "app.js", 
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/spp.js"
+        "dest": "/app.js"
       }
     ]
   }
