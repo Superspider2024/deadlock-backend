@@ -7,8 +7,8 @@ const lolVote= async (win,loss)=>{
         const all = await users();
         const K = 40;
 
-        const win1 =all.find(e=> e.id==win);
-        const loss1 =all.find(e=> e.id==loss);
+        const win1 =all.find(e=> e.insta==win);
+        const loss1 =all.find(e=> e.insta==loss);
 
         const sWin=1;
         const sLoss=0;

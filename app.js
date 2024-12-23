@@ -27,8 +27,8 @@ app.use('/api', image)
 //connect an move everything to mongoDB DONE TESTED MADE
 //adding a vote '/api/vote' DONE TESTED 
 
-app.get('/', (req,res)=>{
-    res.send('hi!')
+app.get('/', async(req,res)=>{
+    res.status(200).json(await users())
 })
 
 
