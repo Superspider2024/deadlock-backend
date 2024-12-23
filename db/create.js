@@ -18,7 +18,7 @@ const newCreate= async (insta,id,votes,gender)=>{
             id,
             votes,
             gender
-        })
+        });
         console.log("well done")
         return newUser
 

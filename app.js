@@ -11,8 +11,6 @@ const PORT= process.env.PORT;
 
 connect()
 
-
-
 app.use(cors())
 app.use(express.json())
 app.use('/app', main)
@@ -27,8 +25,7 @@ app.use('/api', image)
 //images-'/api/images' DONE TESTED
 //add-'/app/add/:insta DONE TESTED MADE
 //connect an move everything to mongoDB DONE TESTED MADE
-//adding a vote '/api/vote1/:id' DONE TESTED
-//adding a vote '/api/vote0/:id' DONE TESTED
+//adding a vote '/api/vote' DONE TESTED 
 
 app.get('/', (req,res)=>{
     res.send('hi!')
