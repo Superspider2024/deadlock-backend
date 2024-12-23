@@ -12,7 +12,7 @@
 
 ## version 0.0.3
 
-- Major bug fix of 'Lauren' luckily caught in development prior to prooudction.It involved a one-click applicatin-layer permanent DDOS crash on the backend server hence the site was unusable until manual reboot.
+- Major bug fix of 'Lauren' luckily caught in development prior to prooudction. It involved a one-click application-layer permanent DDOS crash on the backend server hence the site was unusable until manual reboot.
 
 - The bug "Lauren" was due to the fact the backend server was tricked into sending two responses to the same request hence causing a "ERR_HTTP_HEADERS_SENT" error in the node.js/express server. This was cuased when an invalid search was made in the leaderboards site.
 
