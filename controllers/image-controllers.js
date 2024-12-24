@@ -11,7 +11,7 @@ const image =async(req,res)=>{
     const bro = bruv.find(n => n.id==num)
 
     const man= await generateImageUrl(bro.insta)
-    res.status(200).json(man)
+    res.status(200).send(man)
 
 
     }catch(e){
