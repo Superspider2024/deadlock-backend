@@ -12,7 +12,7 @@ const image =async(req,res)=>{
 
     let man= await generateImageUrl(bro.insta)
     man = man.replace(/['"]/g, '');
-    res.status(200).send(man)
+    res.status(200).json(man)
 
 
     }catch(e){
