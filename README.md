@@ -22,3 +22,5 @@
 
 - Implemneted the ELO algorithmn from chess.com to make the points much fairer. This allows those with low points to catch up and those with high not to dominate constantly. This also changed the whole votes router and controller.
 
+## version 1.0.0
+- Successfully deployed and changed the code alot to allow deployment to Railways. Fixed a bug in this version where a feature in Railways deformed the cloudinary URLs when sent to the frontend, preventing any image from loading!
