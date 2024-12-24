@@ -10,7 +10,8 @@ const image =async(req,res)=>{
     const bruv = await users()
     const bro = bruv.find(n => n.id==num)
 
-    const man= await generateImageUrl(bro.insta)
+    let man= await generateImageUrl(bro.insta)
+    man = man.replace(/['"]/g, '');
     res.status(200).send(man)
 
 
